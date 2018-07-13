@@ -1,0 +1,52 @@
+doctype html
+html(lang='pt-br')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    meta(name='format-detection', content='telephone=no')
+
+    //- Title
+    //- ===================================
+    title O front-end acabou?
+
+    //- Favicon and SVG logo
+    //- ===================================
+    link(rel='shortcut icon', href='assets/img/favicon.ico')
+    link(rel='logo', type='image/svg', href='assets/img/logo.svg')
+
+    //- Stylesheet and fonts are placed after body for performance reasons
+    //- Scripts are places at the end of body for performance reasons
+
+  body
+
+    main
+      .question
+        h2.title.timer_answer O front-end já morreu?
+        span.answer ???
+
+      .counter
+        h2.title.timer_title Estamos esperando há:
+        .timer
+
+    .created-by
+      span.created-text Criado por&nbsp;
+        a.creator-link(href='https://github.com/kvnol', target='_blank', rel='noopener') Kevin Oliveira
+        | &nbsp;&&nbsp;
+        a.creator-link(href='https://github.com/ricardogouveia3', target='_blank', rel='noopener') Ricardo Gouveia
+        |.&nbsp;
+        a.creator-link(href='https://tableless.com.br/carreira-de-front-end-vai-morrer/', target='_blank', rel='noopener') Entenda o meme
+        |.
+
+
+    //- JS scripts
+    //- ===================================
+    script(async, src='js/index.min.js')
+
+  //- Stylesheet and fonts
+  //- ===================================
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css')
+  link(rel='stylesheet', href='assets/css/style.min.css')
+
+  link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800")
+  link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Roboto+Mono")
