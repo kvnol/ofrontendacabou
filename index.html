@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>O front-end acabou?</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    html {
+      height: 100%;
+      text-rendering: optimizeLegibility;
+    }
+
+    body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #2fbc81;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    main {
+
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .timer {
+      font-size: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h1 class="title">Esperando o front-end acabar há:</h1>
+    <div class="timer"></div>
+  </main>
+  
+  <script>
+    const countDownDate = new Date("Mar 17, 2017 00:00:00").getTime();
+    const x = setInterval(() => {
+      var now = new Date().getTime();
+      var distance = now - countDownDate;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.querySelector(".timer").innerHTML = days + " dias,<br> " + hours + " horas,<br> "
+      + minutes + " minutos e<br> " + seconds + " segundos. ";
+    }, 1000);
+  </script>
+</body>
+</html>
