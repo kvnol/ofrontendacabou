@@ -1,0 +1,25 @@
+{
+  "name": "gulp-boilerplate",
+  "version": "1.0.0",
+  "description": "simple boilerplate for gulp projets with pug, sass, browsersync",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "sasslintConfig": ".sass-lint.yml",
+  "author": "Ricardo Gouveia",
+  "license": "MIT"
+}
