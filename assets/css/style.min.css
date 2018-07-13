@@ -29,11 +29,6 @@ main {
   text-align: left;
 }
 
-.title {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
 .question {
   margin-bottom: 5rem;
 }
@@ -45,8 +40,19 @@ main {
 }
 
 .timer {
+  margin: .5rem 0;
   font-size: 1.5rem;
   font-family: 'Roboto Mono', monospace;
+}
+
+.timer_title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.timer_subtitle {
+  font-size: .85rem;
 }
 
 .created-by {
