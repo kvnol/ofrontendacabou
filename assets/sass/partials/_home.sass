@@ -5,6 +5,9 @@ main
 .question
   margin-bottom: 5rem
 
+  @media (max-width: 850px)
+    margin-bottom: 3rem
+
   &__title
     font:
       size: 1.2rem
@@ -39,6 +42,11 @@ main
   position: absolute
   text-align: center
 
+  @media (max-width: 850px)
+    position: unset
+    margin-top: 3em
+    bottom: 0
+
 .creator-link
   color: $white
   font-weight: bold
@@ -47,3 +55,7 @@ main
 
   &:hover
     text-decoration: none
+
+.created-text:last-child
+  @media (max-width: 850px)
+    margin-bottom: 0
