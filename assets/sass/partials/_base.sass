@@ -7,19 +7,22 @@ html
   -webkit-font-smoothing: antialiased
   box-sizing: border-box
   text-rendering: optimizeLegibility
-  //height: 100%
 
 body
   align-items: center
-  background-color: #000
-  color: #fff
+  background-color: $black
+  color: $white
   display: flex
-  font-family: 'Open Sans', sans-serif
+  flex-wrap: wrap
+  font-family: $default
   font-size: 18px
   justify-content: center
   margin: 0
   min-height: 100vh
-  flex-wrap: wrap
+  transition: background-color .3s ease-in-out
+
+  @media (max-width: 850px)
+    padding: 2em 0
 
 a
   text-decoration: none
