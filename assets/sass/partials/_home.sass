@@ -1,46 +1,48 @@
 main
-  width: 75%
   text-align: left
+  width: 75%
 
 .question
   margin-bottom: 5rem
 
   &__title
-    margin: 0
     font:
       size: 1.2rem
       weight: bold
+    margin: 0
 
 .answer
+  font-size: 8rem
   text-align: center
-  font-size: 7em
-  font-family: 'Roboto Mono', monospace
 
 .timer
-  margin: .5rem 0
   font-size: 1.5rem
-  font-family: 'Roboto Mono', monospace
+  margin: .5rem 0
 
   &__title
-    margin: 0
     font:
       size: 1.2rem
       weight: bold
+    margin: 0
 
   &__subtitle
     font-size: .85rem
 
+.answer,
+.timer
+  font-family: $monospace
+
 .created-by
-  font-size: .7em
-  text-align: center
-  position: absolute
   bottom: 1em
   display: block
+  font-size: .7em
+  position: absolute
+  text-align: center
 
 .creator-link
-  color: #ffffff
-  text-decoration: underline
+  color: $white
   font-weight: bold
+  text-decoration: underline
   transition: opacity .3s ease-in-out
 
   &:hover
