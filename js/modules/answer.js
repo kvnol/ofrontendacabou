@@ -1,4 +1,4 @@
 setTimeout(function(){ 
-  document.querySelector(".answer").innerHTML = 'Não';
-  document.body.style.backgroundColor = "#2fbc81";
+  document.querySelector(".answer").innerHTML = 'Sim';
+  document.body.style.backgroundColor = "red";
 }, 3000);
