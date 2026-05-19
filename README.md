@@ -1,5 +1,5 @@
 # O front-end acabou?
 
-### Ainda não.
+Site estático: abra `index.html` no navegador.
 
-2018 &copy; Licensed by MIT
+A contagem exibe a diferença fixa entre **19 de março de 2017** e **6 de agosto de 2025** ([Claude Code](https://claude.com/product/claude-code)).
